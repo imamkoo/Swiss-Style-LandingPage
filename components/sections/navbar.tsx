@@ -21,7 +21,7 @@ export function Navbar() {
 
         {/* CTA Button */}
         <motion.a
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6281808000575"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center border-2 border-swiss-black bg-swiss-black px-5 py-3 font-mono text-xs font-bold uppercase tracking-widest text-swiss-white transition-colors duration-150 hover:bg-swiss-red hover:border-swiss-red md:px-8 md:text-sm"
