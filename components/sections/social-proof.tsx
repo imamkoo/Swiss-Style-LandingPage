@@ -22,6 +22,11 @@ export function SocialProof() {
   return (
     <section className="swiss-grid-pattern border-t-4 border-swiss-black">
       {/* Demo Cards Grid */}
+      <div className="border-b-2 border-swiss-black px-6 py-3 md:px-12">
+          <span className="font-mono text-xs font-bold uppercase tracking-widest text-swiss-red">
+            * THE PROOF
+          </span>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         {demos.map((demo, index) => (
           <motion.div

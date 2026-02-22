@@ -25,38 +25,40 @@ export function Benefits() {
     <section className="border-t-4 border-swiss-black">
       {/* Feature List */}
       <div>
+        <div className="border-b-2 border-swiss-black px-6 py-3 md:px-12">
+          <span className="font-mono text-xs font-bold uppercase tracking-widest text-swiss-red">
+            * THE SYSTEM
+          </span>
+        </div>
         {features.map((feature, index) => (
-          <motion.div
-            key={index}
-            className="grid grid-cols-1 items-baseline border-b-2 border-swiss-black md:grid-cols-[120px_1fr_1fr]"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: index * 0.1, duration: 0.3 }}
-          >
-            {/* Number */}
-            <div className="border-b-2 border-swiss-black px-6 py-6 md:border-b-0 md:border-r-2 md:px-8 md:py-10">
-              <span className="font-mono text-4xl font-black text-swiss-red md:text-5xl">
-                {feature.number}
-              </span>
-            </div>
+        <motion.div
+          key={feature.number}
+          className="grid grid-cols-1 border-b-2 border-swiss-black md:grid-cols-2"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ delay: index * 0.1, duration: 0.3 }}
+        >
+          {/* kiri: nomor + title, ada border kanan di md → garis tengah */}
+          <div className="flex items-baseline gap-4 border-b-2 border-swiss-black px-6 py-6 md:border-b-0 md:border-r-2 md:px-8 md:py-10">
+            <span className="font-mono text-4xl font-black text-swiss-red md:text-5xl">
+              {feature.number}
+            </span>
+            <h3 className="font-mono text-2xl font-black uppercase tracking-tight text-swiss-black md:text-3xl">
+              {feature.title}
+            </h3>
+          </div>
 
-            {/* Title */}
-            <div className="border-b-2 border-swiss-black px-6 py-6 md:border-b-0 md:border-r-2 md:px-8 md:py-10">
-              <h3 className="font-mono text-2xl font-black uppercase tracking-tight text-swiss-black md:text-3xl">
-                {feature.title}
-              </h3>
-            </div>
-
-            {/* Description */}
-            <div className="px-6 py-6 md:px-8 md:py-10">
-              <p className="text-lg leading-relaxed text-swiss-black/80">
-                {feature.desc}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+          {/* kanan: deskripsi */}
+          <div className="px-6 py-6 md:px-8 md:py-10">
+            <p className="text-lg leading-relaxed text-swiss-black/80">
+              {feature.desc}
+            </p>
+          </div>
+        </motion.div>
+      ))}
       </div>
     </section>
   )
 }
+

@@ -26,6 +26,11 @@ export function PainPoints() {
   return (
     <section className="border-t-4 border-swiss-black">
       {/* 2x2 Grid */}
+      <div className="border-b-2 border-swiss-black px-6 py-3 md:px-12">
+          <span className="font-mono text-xs font-bold uppercase tracking-widest text-swiss-red">
+            * THE REALITY
+          </span>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         {pains.map((pain, index) => (
           <motion.div
