@@ -39,7 +39,7 @@ export function Hero() {
           </motion.p>
 
           <motion.a
-            href="#pricing"
+            href="#web-demo"
             className="mt-12 inline-flex h-16 items-center gap-3 bg-swiss-red px-8 font-mono text-sm font-bold uppercase tracking-widest text-swiss-white transition-colors duration-150 hover:bg-swiss-black"
             whileTap={{ scale: 0.97 }}
             initial={{ opacity: 0 }}

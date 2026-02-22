@@ -20,7 +20,7 @@ const demos = [
 
 export function SocialProof() {
   return (
-    <section className="swiss-grid-pattern border-t-4 border-swiss-black">
+    <section id="web-demo" className="swiss-grid-pattern border-t-4 border-swiss-black">
       {/* Demo Cards Grid */}
       <div className="border-b-2 border-swiss-black px-6 py-3 md:px-12">
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-swiss-red">
